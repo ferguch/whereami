@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Amazon="http://schemas.android.com/apk/lib/com.amazon.device.ads"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="0dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity$GPSAddressFragment" >
+
+    <!-- TODO TableView -->
+    
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    
+    <com.amazon.device.ads.AdLayout
+        android:id="@+id/AmazonAd"
+        android:layout_below="@+id/section_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <!-- Address Line -->
+
+    <TextView
+        android:id="@+id/labelAddressLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AmazonAd"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/addressLine" />
+
+    <TextView
+        android:id="@+id/fieldAddressLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/labelAddressLine"
+        android:layout_below="@+id/AmazonAd"
+        android:textSize="15sp" />
+
+    <!-- City -->
+
+    <TextView
+        android:id="@+id/labelCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fieldAddressLine"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/city" />
+
+    <TextView
+        android:id="@+id/fieldCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fieldAddressLine"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/labelCity"
+        android:textSize="15sp" />
+
+    <!-- Postal code -->
+
+    <TextView
+        android:id="@+id/labelPostalCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fieldCity"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/postalCode" />
+
+    <TextView
+        android:id="@+id/fieldPostalCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fieldCity"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/labelPostalCode"
+        android:textSize="15sp" />
+
+    <!-- Country -->
+
+    <TextView
+        android:id="@+id/labelCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fieldPostalCode"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/country" />
+
+    <TextView
+        android:id="@+id/fieldCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fieldPostalCode"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/labelCountry"
+        android:textSize="15sp" />
+
+    <!-- Latitude -->
+
+    <TextView
+        android:id="@+id/labelLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fieldCountry"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/latitude" />
+
+    <TextView
+        android:id="@+id/fieldLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fieldCountry"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/labelLatitude"
+        android:textSize="15sp" />
+
+    <!-- Longititude -->
+
+    <TextView
+        android:id="@+id/labelLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fieldLatitude"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/longitude" />
+
+    <TextView
+        android:id="@+id/fieldLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fieldLatitude"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/labelLongitude"
+        android:textSize="15sp" />
+
+    <!-- Timezone -->
+
+    <TextView
+        android:id="@+id/labelTimezone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fieldLongitude"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/timezone" />
+
+    <TextView
+        android:id="@+id/fieldTimezone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fieldLongitude"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/labelTimezone"
+        android:textSize="15sp" />
+
+</RelativeLayout>

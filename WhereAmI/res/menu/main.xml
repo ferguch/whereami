@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/send_gps"
+        android:icon="@android:drawable/ic_menu_share"
+        android:showAsAction="ifRoom"
+        android:title="@string/send_gps"/>
+
+    <item
+        android:id="@+id/preferences"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="@string/preferences"/>
+
+    <item
+        android:id="@+id/refresh_gps"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="@string/refresh_gps"/>
+    
+</menu>

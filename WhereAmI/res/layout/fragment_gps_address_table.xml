@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Amazon="http://schemas.android.com/apk/lib/com.amazon.device.ads"    
+    android:id="@+id/RunnerStatsView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <com.amazon.device.ads.AdLayout
+            android:id="@+id/RunnerStatsAd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="6px"
+        android:stretchColumns="*" >
+        
+        <!-- Address row -->
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/labelAddressLine"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android_layout_span="2"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="@string/addressLine" />
+
+            <TextView
+                android:id="@+id/fieldAddressLine"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android_layout_span="2"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="None" />
+        </TableRow>
+
+        <!-- City row -->
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/labelCity"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android_layout_span="2"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="@string/city" />
+
+            <TextView
+                android:id="@+id/fieldCity"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android_layout_span="2"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="None" />
+        </TableRow>
+
+        <!-- Postal row -->
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/labelPostalCode"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android_layout_span="2"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="@string/postalCode" />
+
+            <TextView
+                android:id="@+id/fieldPostalCode"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android_layout_span="2"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="None" />
+        </TableRow>
+
+        <!-- Country row -->
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/labelCountry"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android_layout_span="2"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="@string/country" />
+
+            <TextView
+                android:id="@+id/fieldCountry"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android_layout_span="2"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="None" />
+        </TableRow>
+
+        <!-- Latitude row -->
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/labelLatitude"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android_layout_span="2"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="@string/latitude" />
+
+            <TextView
+                android:id="@+id/fieldLatitude"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android_layout_span="2"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="None" />
+        </TableRow>
+
+        <!-- Longitude row -->
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/labelLongitude"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android_layout_span="2"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="@string/longitude" />
+
+            <TextView
+                android:id="@+id/fieldLongitude"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android_layout_span="2"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="None" />
+        </TableRow>
+
+        <!-- Timezone row -->
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/labelTimezone"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android_layout_span="2"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="@string/timezone" />
+
+            <TextView
+                android:id="@+id/fieldTimezone"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android_layout_span="2"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="None" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
